@@ -36,7 +36,7 @@ const Todolist = ({updateTodo, handleDelete, handleClick, todos }) => {
         </div>
         )
         :
-        (<TodoForm className='todo-form edit' edit={edit} onSubmit={submitUpdate} />)
+        (<TodoForm edit={edit} onSubmit={submitUpdate} />)
 }
 
 export default Todolist;

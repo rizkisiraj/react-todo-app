@@ -8,11 +8,10 @@ const App = () => {
   const [todoItems, setTodo] = useState([]);
 
   useEffect(() => {
-    if (localStorage.getItem("todosItems") == null) return
+    if (localStorage.getItem("todosItems") == null) return;
     let text = localStorage.getItem("todosItems");
-    let obj = JSON.parse(text);
-    const { items } = obj;
-    console.log(items);
+    let todosObj = JSON.parse(text);
+    const { items } = todosObj;
     setTodo(items);
   },[])
 

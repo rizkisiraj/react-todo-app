@@ -16,7 +16,7 @@ const Todo = ({ onDeleteHandler, onClickHandler, todo, handleEdit }) => {
 
     return(
         <div className={complete ? "todo-row complete" : "todo-row"}>
-        <div onClick={handleClick} key={id}>{task}</div>
+        <div  onClick={handleClick} key={id}>{task}</div>
         <div className='icons'>
             <RiCloseCircleLine
                 onClick={handleDelete}
